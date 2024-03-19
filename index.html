@@ -10,7 +10,7 @@
     <meta name="keywords" content="Java,Spring,个人博客，微信小程序，博客">
     <meta name="format-detection" content="telephone=no">
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.fancybox@2.1.5/source/jquery.fancybox.css">
     <script type="text/javascript">
@@ -47,10 +47,10 @@
                         <div class="card-content">
                             <div class="card-info-avatar is-center">
                                 <img class="avatar-img"
-                                    src="https://cdn.jsdelivr.net/gh/laoxuai/assert/images/20200125221102.png"
+                                    src="./static/avatar.jpg"
                                     alt="avatar">
                                 <div class="author-info__name">Yi Song</div>
-                                <div class="author-info__description">95后青年，后端开发者，略懂前端, <s>学生，找实习中</s>，缺乏社会的毒打</div>
+                                <div class="author-info__description">95后青年，后端开发者，略懂前端, 学生，找实习中，缺乏社会的毒打</div>
                             </div>
                             <div class="card-info-social-icons is-center">
                                 <a class="social-icon" href="https://github.com/yiSong408" target="_blank">
@@ -171,7 +171,6 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.fancybox@2.1.5/source/jquery.fancybox.js"></script>
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js" async></script>
     <!-- aplayer、meting -->
@@ -191,12 +190,6 @@
     <script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js"></script>
 
     <script type="text/javascript">
-        console.clear();
-        console.log("%c 有朋自远方来, 不亦说乎.", "background:#24272A; color:#ffffff", "");
-        console.log("%c Github %c", "background:#24272A; color:#ffffff", "", "https://github.com/laoxuai");
-        console.log("%c 版本号: %c", "background:#24272A; color:#ffffff", "", "1.0.0");
-
-
         (function ($) {
             $.fn.snow = function (options) {
                 var $flake = $('<div id="snowbox" />').css({ 'position': 'absolute', 'z-index': '9999', 'top': '-50px' }).html('&#10052;'),
