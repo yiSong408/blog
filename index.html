@@ -76,11 +76,11 @@
                      <div class="webinfo">
                         <div class="webinfo-item">
                            <div class="webinfo-site-uv-name">本站访客数 :</div>
-                           <div class="webinfo-site-uv-count" id="enter-num">100</div>
+                           <div class="webinfo-site-uv-count" id="enter-num">--</div>
                         </div>
                         <div class="webinfo-item">
                            <div class="webinfo-site-name">本站获赞 :</div>
-                           <div class="webinfo-site-pv-count">10</div>
+                           <div class="webinfo-site-pv-count">--</div>
                         </div>
                      </div>
                   </div>
@@ -218,7 +218,7 @@
    <script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js"></script>
 
    <script type="text/javascript">
-      let ipAddr="http://127.0.0.1:";
+      let ipAddr="http://13.42.57.90:";
 
       (function ($) {
          $.fn.snow = function (options) {
@@ -285,7 +285,7 @@
       })
 
       function addViewerNum(){
-         $.get(ipAddr+'5000/enter',function(data){
+         $.get(ipAddr+'8080/enter',function(data){
             $('#enter-num').text(data[0])
          })
       }
