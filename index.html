@@ -213,7 +213,7 @@
    <script src="https://unpkg.com/nplayer@latest/dist/index.min.js"></script>
 
    <!--   一言   -->
-   <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+   <script src="https://api.quotable.io/random" defer></script>
 
    <!--鼠标点击效果-->
    <script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js"></script>
@@ -290,6 +290,12 @@
             $('#enter-num').text(data[0])
          })
       }
+
+      $(function(){
+         $.get('https://api.quotable.io/random',function(data){
+            $('#hitokoto').text(data.content+" - "+data.author)
+         })
+      })
 
    </script>
 </body>
