@@ -61,7 +61,7 @@
                   <div class="card-content">
                      <div class="item-headline">
                         <i class="fa fa-bullhorn" aria-hidden="true"></i>
-                        <span>一言</span>
+                        <span>Hitokoto</span>
                      </div>
                      <div id="hitokoto"></div>
                   </div>
@@ -293,7 +293,7 @@
 
       $(function(){
          $.get('https://api.quotable.io/random',function(data){
-            $('#hitokoto').text(data.content+" - "+data.author)
+            $('#hitokoto').text(data.content+" By "+data.author)
          })
       })
 
